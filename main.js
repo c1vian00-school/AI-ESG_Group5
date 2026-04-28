@@ -1,6 +1,3 @@
-import Chart from 'chart.js/auto';
-import './style.css'
-
 // Wait for the DOM to load before drawing the chart
 document.addEventListener('DOMContentLoaded', () => {
   
