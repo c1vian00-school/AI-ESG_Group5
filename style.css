@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #0d9488; /* A nice healthcare green/teal */
+  --bg-color: #f4f4f5;
+  --card-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  padding: 2rem;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header h1 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.header p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.kpi-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.kpi-value {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.data-list h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--bg-color);
+  padding-bottom: 0.5rem;
+}
+
+.data-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.data-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--bg-color);
+  font-size: 1.1rem;
+}
+
+.data-list li:last-child {
+  border-bottom: none;
+}

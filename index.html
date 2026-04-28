@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terveystalo ESG Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      
+      <header class="header">
+        <h1>Terveystalo ESG Dashboard 2025</h1>
+        <p>Tracking sustainability and healthcare impact across Finland.</p>
+      </header>
+
+      <section class="kpi-grid">
+        <div class="card kpi-card">
+          <h3>Total Revenue</h3>
+          <p class="kpi-value">€ 1.28B</p>
+        </div>
+        <div class="card kpi-card">
+          <h3>Employees</h3>
+          <p class="kpi-value">14,400</p>
+        </div>
+        <div class="card kpi-card">
+          <h3>Tax Contribution</h3>
+          <p class="kpi-value">€ 220M+</p>
+        </div>
+        <div class="card kpi-card">
+          <h3>Gender Pay Gap</h3>
+          <p class="kpi-value">< 5%</p>
+        </div>
+      </section>
+
+      <section class="charts-grid">
+        <div class="card chart-container">
+          <h2>Energy Consumption (GWh)</h2>
+          <canvas id="energyChart"></canvas>
+        </div>
+        
+        <div class="card data-list">
+          <h2>Social & Governance Highlights</h2>
+          <ul>
+            <li><strong>NPS Clinics:</strong> 87.6 / 100</li>
+            <li><strong>NPS Hospitals:</strong> 95.4 / 100</li>
+            <li><strong>Treatment Effectiveness (PEI):</strong> 70.4%</li>
+            <li><strong>Code of Conduct Training:</strong> 96% completion</li>
+            <li><strong>Scope 1 & 2 Emissions:</strong> Reduced by 26%</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
